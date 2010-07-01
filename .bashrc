@@ -5,7 +5,10 @@
 
 # Colors
 alias ls='ls --color=auto'
-PS1='\[\033[00;92m\]\u\[\033[00;92m\]@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+ PS1='\[\033[00;92m\]\u\[\033[00;92m\]@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+#PS1='\[\033[01;32m\]\u               @\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+#PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+
 
 # don't put duplicate lines in the history. See bash(1) for more options
 # don't overwrite GNU Midnight Commander's setting of `ignorespace'.
@@ -24,6 +27,7 @@ fi
 # Functions
 mkcd() { mkdir -p "$@" && cd "$_"; }
 vcp() { find $1/ \( -type d -exec mkdir -p $2/{}  \; \) -o \( -type f -exec ln {} $2/{}  \; \); }
+#wmp2ogg() { find . -iname '*wma' \( -exec ffmpeg -i {} -acodec vorbis -aq 5  {}.ogg \; \)  }
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
