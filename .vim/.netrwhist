@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/hendrik'
-let g:netrw_dirhist_2='/home/hendrik/workspace/naubino/flash/stat/es'
-let g:netrw_dirhist_3='/home/hendrik/workspace/naubino/flash/stat'
-let g:netrw_dirhist_4='/home/hendrik/workspace/naubino/flash'
-let g:netrw_dirhist_5='/home/hendrik'
