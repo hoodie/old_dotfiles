@@ -2,7 +2,8 @@ set number
 set autoindent
 set smartindent
 set nowrap
-set tabstop=3
+set tabstop=2
+set shiftwidth=2
 set ignorecase
 set ruler
 syntax on
