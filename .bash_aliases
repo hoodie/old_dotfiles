@@ -25,3 +25,11 @@ MAGENTA='\[\e[1;35m\]'
 white='\[\e[0;37m\]'
 WHITE='\[\e[1;37m\]'
 
+## Moving around & all that jazz
+alias back='cd $OLDPWD'
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ......="cd ../../../../.."
+
