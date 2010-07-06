@@ -12,3 +12,7 @@ set hlsearch
 set incsearch
 
 au BufNewFile,BufRead *.as setf actionscript
+
+"highlighting
+highlight Comment guifg=Orange
+highlight CursorLine guibg=Black
