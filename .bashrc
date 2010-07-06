@@ -1,5 +1,7 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 
+fortune | cowsay -f small;
+
 # Check for an interactive session
 [ -z "$PS1" ] && return
 
@@ -7,10 +9,12 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=always'
 
-PS1='\[\033[00;92m\]\u:\[\033[01;34m\]\w\[\033[00m\]\$ '
-#PS1='\[\033[01;32m\]\u               @\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-#PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+if [ -f ~/.bash_aliases ]; then
+. ~/.bash_aliases
+fi
 
+PS1="${lightgreen}\u${white}:${blue}\w${white}$ " 
+PS2="${NC}--> ${white}"
 
 # don't put duplicate lines in the history. See bash(1) for more options
 # don't overwrite GNU Midnight Commander's setting of `ignorespace'.
@@ -21,10 +25,6 @@ HISTCONTROL=ignoreboth
 # append to the history file, don't overwrite it
 shopt -s histappend
 
-
-if [ -f ~/.bash_aliases ]; then
-. ~/.bash_aliases
-fi
 
 # Functions
 mkcd() { mkdir -p "$@" && cd "$_"; }

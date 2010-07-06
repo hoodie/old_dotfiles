@@ -1,5 +1,5 @@
 if [ -f ~/.bashrc ]; then
 . ~/.bashrc
-PS1='\[\033[00;92m\]\u\[\033[00;92m\]@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+PS1="${lightgreen}\u${GREEN}@${green}\h${white}:${blue}\w${white}$ " 
 fi
 
