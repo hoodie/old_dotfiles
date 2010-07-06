@@ -1,19 +1,15 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 
-fortune | cowsay -f small;
+fortune;
 
 # Check for an interactive session
 [ -z "$PS1" ] && return
-
-# Colors
-alias ls='ls --color=auto'
-alias grep='grep --color=always'
 
 if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
 
-PS1="${lightgreen}\u${white}:${blue}\w${white}$ " 
+PS1="${lightgreen}\u${white}:${BLUE}\w${white}$ " 
 PS2="${NC}--> ${white}"
 
 # don't put duplicate lines in the history. See bash(1) for more options

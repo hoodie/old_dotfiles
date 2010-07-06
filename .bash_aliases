@@ -6,6 +6,12 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+alias du="du -h"
+alias df="df -h"
+alias cd..="cd .." #work around a common typo
+alias vi=vim
+alias :e=vim
+alias :q=exit
 
 red='\[\e[0;31m\]'
 RED='\[\e[1;31m\]'
