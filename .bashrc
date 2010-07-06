@@ -1,6 +1,6 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 
-fortune;
+echo -ne "${BLUE}";uptime
 
 # Check for an interactive session
 [ -z "$PS1" ] && return
