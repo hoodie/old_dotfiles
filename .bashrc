@@ -1,6 +1,5 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 
-echo -ne "${BLUE}";uptime
 
 # Check for an interactive session
 [ -z "$PS1" ] && return
@@ -9,7 +8,9 @@ if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
 
-PS1="${lightgreen}\u${white}:${BLUE}\w${white}$ " 
+echo -ne "\e[1;34m";uptime
+
+PS1="${lightgreen}\u${white}:${BLUE}\w${white}\$ "
 PS2="${NC}--> ${white}"
 
 # don't put duplicate lines in the history. See bash(1) for more options
