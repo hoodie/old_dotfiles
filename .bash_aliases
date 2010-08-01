@@ -13,6 +13,10 @@ alias vi=vim
 alias :e=vim
 alias :q=exit
 alias pwdend='pwd | awk -F"/" "{print \$NF}"'
+if [ -x /usr/bin/notify-send ]; then
+	  alias alert='notify-send -i gnome-terminal "[$?] $(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/;\s*alert$//'\'')"'
+fi
+
 
 red='\[\e[0;31m\]'
 RED='\[\e[1;31m\]'
