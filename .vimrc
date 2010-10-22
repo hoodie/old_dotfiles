@@ -16,3 +16,16 @@ au BufNewFile,BufRead *.as setf actionscript
 "highlighting
 highlight Comment guifg=Orange
 highlight CursorLine guibg=Black
+
+if has('gui_running')
+	colorscheme slate
+else
+	colorscheme slate
+endif
+
+filetype plugin on
+if has('gui_running')
+    set grepprg=grep\ -nH\ $*
+    filetype indent on
+    let g:tex_flavor='latex'
+endif
