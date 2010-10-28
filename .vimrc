@@ -29,3 +29,6 @@ if has('gui_running')
     filetype indent on
     let g:tex_flavor='latex'
 endif
+
+inoremap jj <ESC>
+set scrolloff=5
