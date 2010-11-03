@@ -1,6 +1,6 @@
 test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-alias ls='ls --color=auto'
-alias lash='la -lash'
+alias ls='ls --color=auto --group-directories-first'
+alias lash='ls -lash'
 #alias dir='dir --color=auto'
 #alias vdir='vdir --color=auto'
 
